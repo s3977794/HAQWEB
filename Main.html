@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anemo Wanderer</title>
+</head>
+<body>
+<!--Begin header section-->
+    <header>
+        <h1 class="logo">ANEMO<br> 
+            <span>WANDERER</span></h1>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Review">Review</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            
+            <div class="usernav">
+                <img src="HtmlPicture/user.png" alt="User Profile" style="width: 30px;height: 30px;" onclick="toggleMenu()">
+                <div class="userwrap" id="subMenu">
+                    <div class="usersubmenu">
+                        <div class="userinfor">
+                            <img src="HtmlPicture/user.png" alt="User Image" >
+                            <h2>Anemo Wanderer</h2>
+                        </div>
+                        <hr>
+                        <a href="#" class="submenulink">
+                            <img src="HtmlPicture/gear.png">
+                            <p>Account</p>
+                            <span>></span>
+                        </a>
+                        <a href="userLogin.html" class="submenulink">
+                            <img src="HtmlPicture/login.png">
+                            <p>Login</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="submenulink">
+                            <img src="HtmlPicture/log-out.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>             
+            </div>
+            
+            <div class="searchbar">
+                <form action="#" class="searchtext">
+                    <input type="text" placeholder="Search here..." name="search bar" id="search">
+                    <button type="submit">
+                        <img src="HtmlPicture/loupe.png">
+                    </button>
+                </form>
+            </div>
+<script>
+    let subMenu =document.getElementById("subMenu");
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu")
+    }
+</script>
+        </ul>
+    </header>
+<!--End header section-->
+
+</body>
+</html>

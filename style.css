@@ -1,0 +1,183 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+  }
+
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+    background-color: rgb(218, 255, 213);
+}
+/* Header */
+  header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background: rgb(96, 133, 92);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% ;
+  }
+
+  .logo{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    
+  }
+
+  .logo span{
+    color: rgb(78, 247, 72);
+  }
+
+  header ul{
+    list-style: none;
+    display: flex;
+    padding-left: -10px;
+  }
+  header ul li{
+    padding: 20px 30px 10px ;
+  }
+  header ul li:hover{
+    background: rgb(69, 112, 60);
+  }
+  header ul li a{
+    color:white;
+    font-size: 20px;
+  }
+  /* User icon */
+  .usernav{
+    padding: 20px 25px 15px 200px;
+  }
+
+  .usernav img{
+    cursor: pointer;
+  }
+
+  .userwrap {
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-hieght 0.5s;
+  }
+  .userwrap.open-menu {
+    max-height: 400px;
+  }
+
+  .usersubmenu{
+    background: #fff;
+    padding: 20px;
+    margin: 10px
+  }
+
+  .userinfor{
+    display: flex;
+    align-items: center;
+  }
+  .userinfor h2{
+    font-weight: 10;
+    font-size: 20px;
+  }
+  .userinfor img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  .usersubmenu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+  }
+
+  .submenulink{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+  }
+
+  .submenulink p{
+    width: 60%;
+    font-size: 15px;
+    transition: transform 0.5s;
+  }
+
+  .submenulink img{
+    width: 50px;
+    height: 50px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+  }
+
+  .submenulink span{
+    font-size: 20px;
+    transition: transform 0.5s;
+  }
+
+  .submenulink:hover span{
+    transform: translateX(5px);
+  }
+
+  .submenulink:hover p{
+    font-weight: 600;
+  }
+
+  /* Search bar */
+  .searchbar{
+    display: flex;
+    background: #ffffff3d;
+    border-radius: 60px;
+    width: 100%;
+    height: 30px;
+    max-width: 700px;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .searchtext input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    width: 80%;
+    color:#ccc
+  }
+
+  ::placeholder{
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .searchtext button{
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: none;
+    cursor: pointer;
+  }
+
+  .searchtext button img{
+    align-items: center;
+    width: 13px;
+    height: 13px;
+  }
+
