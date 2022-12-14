@@ -19,7 +19,7 @@
   header{
     position: fixed;
     top: 0;left: 0;right: 0;
-    background: rgb(96, 133, 92);
+    background: rgb(115, 224, 103);
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@
   }
 
   .logo span{
-    color: rgb(78, 247, 72);
+    color: rgb(61, 141, 58);
   }
 
   header ul{
@@ -44,10 +44,10 @@
     padding-left: -10px;
   }
   header ul li{
-    padding: 20px 30px 10px ;
+    padding: 24px 30px 10px ;
   }
   header ul li:hover{
-    background: rgb(69, 112, 60);
+    background: rgb(153, 235, 171);
   }
   header ul li a{
     color:white;
@@ -55,7 +55,7 @@
   }
   /* User icon */
   .usernav{
-    padding: 20px 25px 15px 200px;
+    padding: 19px 80px 15px 30px;
   }
 
   .usernav img{
@@ -92,7 +92,7 @@
   .userinfor img{
     width: 60px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 20px;
   }
 
   .usersubmenu hr{
@@ -141,43 +141,160 @@
 
   /* Search bar */
   .searchbar{
-    display: flex;
-    background: #ffffff3d;
-    border-radius: 60px;
-    width: 100%;
+    position: absolute;
+    top:20px;
+    right: 9%;
+    transform: translate(40%,-5%);
+    background-color: #ffffff;
     height: 30px;
-    max-width: 700px;
-    align-items: center;
-    margin: 20px;
+    border-radius: 40px;
+    padding: 5px;
   }
-
-  .searchtext input{
-    background: transparent;
-    flex: 1;
-    border: 0;
-    outline: none;
-    padding: 10px;
-    width: 80%;
-    color:#ccc
-  }
-
-  ::placeholder{
-    color: #fff;
-    font-size: 13px;
-  }
-
-  .searchtext button{
-    border: 0;
+.searchbar:hover > .searchTxt{
+  width: 100px;
+  padding: 0 6px;
+}
+.searchbar:hover > .searchButton{
+  background: rgba(194, 235, 213, 0.425);
+}
+  .searchButton{
+    color: #000000;
+    float: right;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    background: none;
-    cursor: pointer;
-  }
-
-  .searchtext button img{
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 13px;
-    height: 13px;
+    transition: 0.4s;
   }
 
+  .searchTxt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    transition: 0.4s;
+    line-height: 20px;
+    width: 0px;
+    text-align: left;
+    justify-content: center;
+  }
+
+/* Footer Section */
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to right, #54ce62, #46ec1c85);
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 16px;
+  line-height: 20px;
+}
+footer .row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer .col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+footer .col:nth-child(2),footer .col:nth-child(3){
+  flex-basis: 15%;
+}
+/* logo picture */
+footer .logo{
+  width: 80px;
+  margin-bottom: 30px;
+}
+footer .col h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+footer .emailId{
+  width: fit-content;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(255, 255, 255,0.7);
+  margin: 20px 0;
+}
+footer ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+footer ul li a{
+  text-decoration: none;
+  color:#fff
+}
+footer ul li a:hover{
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+footer form{
+  padding-bottom: 15px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+
+footer form .fa-regular{
+  font-size: 18px;
+  margin-right: 10px;
+}
+footer form input{
+  width: 100%;
+  background: transparent;
+  color:rgb(255, 255, 255);
+  border: 0;
+  outline: none;
+}
+footer::placeholder{
+  color: rgb(243, 239, 239);
+}
+footer form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer
+}
+footer form button .fa-solid{
+  font-size: 16px;
+  color: rgb(163, 15, 15);
+}
+footer .socialIcons .fa-brands{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: rgb(8, 8, 8);
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+footer hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid rgba(116, 113, 113, 0.932);
+  margin: 20px auto;
+}
+
+footer .copyright{
+  text-align: center;
+  font-size: 12px;
+}
