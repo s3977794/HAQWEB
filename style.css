@@ -61,7 +61,6 @@
   .usernav img{
     cursor: pointer;
   }
-
   .userwrap {
     position: absolute;
     top: 100%;
@@ -141,9 +140,9 @@
 
   /* Search bar */
   .searchbar{
-    position: absolute;
-    top:20px;
-    right: 9%;
+    position: fixed;
+    top:21px;
+    right: 8%;
     transform: translate(40%,-5%);
     background-color: #ffffff;
     height: 30px;
@@ -190,7 +189,7 @@ footer{
   width: 100%;
   position: absolute;
   bottom: 0;
-  background: linear-gradient(to right, #54ce62, #46ec1c85);
+  background: linear-gradient(to right, #54ce62, #08ff98);
   color: #fff;
   padding: 100px 0 30px;
   border-top-left-radius: 125px;
