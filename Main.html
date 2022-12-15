@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Anemo Wanderer</title>
+    <script src="https://kit.fontawesome.com/6f8d1d8e9d.js"></script>
 </head>
 <body>
 <!--Begin header section-->
@@ -47,12 +48,8 @@
             </div>
             
             <div class="searchbar">
-                <form action="#" class="searchtext">
-                    <input type="text" placeholder="Search here..." name="search bar" id="search">
-                    <button type="submit">
-                        <img src="HtmlPicture/loupe.png">
-                    </button>
-                </form>
+                <input class="searchTxt" type="text" name="" placeholder="Type to search">
+                <a class="searchButton" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
 <script>
     let subMenu =document.getElementById("subMenu");
@@ -64,5 +61,58 @@
     </header>
 <!--End header section-->
 
+
+<!--Begin footer-->
+<footer>
+    <div class="row">
+        <div class="col">
+            <img src="HtmlPicture/paper-plane.png" class="logo">
+            <p>We are here to assist you to a new world! Please follow us to have more information. We hope you will have awesome time!</p>
+        </div>
+        <div class="col">
+            <h3>
+                Location
+            </h3>
+            <p>
+                702 Đ. Nguyễn Văn Linh, Tân Hưng, Quận 7, Thành phố Hồ Chí Minh 700000, Vietnam
+            </p>
+            
+            <p class="emailId">
+                Email:
+                anemowanderer@hotmail.com
+            </p>
+             <h4>+84 099999999</h4>
+        </div>
+        <div class="col">
+            <h3>
+                Links
+            </h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>News</h3>
+            <form>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder="Enter your email for more information" required>
+                <i class="fa-solid fa-arrow-right"></i>
+            </form>
+            <div class="socialIcons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">ANEMO WANDERER &copy;2022 - All Rights Reserved</p>
+</footer>
 </body>
 </html>
