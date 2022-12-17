@@ -1,300 +1,346 @@
 *{
-    font-family: 'Nunito', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    text-transform: capitalize;
-    outline: none; border:none;
-    text-decoration: none;
-    transition: all .2s linear;
-  }
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .7s linear;
+}
+/* Set variable */
+:root{
+--headingColor: #72f563;
+--headingSpan:rgb(45, 170, 41);
+--headingUnderline: rgb(0, 0, 0);
+--headingOnPage: rgb(0, 0, 0);
+--mainFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+--footerColor: linear-gradient(to right, #54ce62, #08ff98);
+}
 
-  html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 6rem;
-    scroll-behavior: smooth;
-    background-color: rgb(218, 255, 213);
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+  background-color: rgb(218, 255, 213);
 }
 /* Header */
-  header{
-    position: fixed;
-    top: 0;left: 0;right: 0;
-    background: rgb(115, 224, 103);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10% ;
-  }
+header{
+  position: sticky;
+  top: 0;left: 0;right: 0;
+  background: var(--headingColor);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10% ;
+}
 
-  .logo{
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-    
-  }
+.logo{
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  
+}
 
-  .logo span{
-    color: rgb(61, 141, 58);
-  }
+.logo span{
+  color: var(--headingSpan);
+}
 
-  header ul{
-    list-style: none;
-    display: flex;
-    padding-left: -10px;
-  }
-  header ul li{
-    padding: 24px 30px 10px ;
-  }
-  header ul li:hover{
-    background: rgb(153, 235, 171);
-  }
-  header ul li a{
-    color:white;
-    font-size: 20px;
-  }
-  /* User icon */
-  .usernav{
-    padding: 19px 80px 15px 30px;
-  }
+header ul{
+  list-style: none;
+  display: flex;
+  padding-left: -10px;
+  transition: 0.5s;
+}
+header ul li{
+  padding: 24px 30px 10px ;
+  position: relative;
+}
 
-  .usernav img{
-    cursor: pointer;
-  }
 
-  .userwrap {
-    position: absolute;
-    top: 100%;
-    right: 10%;
-    width: 320px;
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-hieght 0.5s;
-  }
-  .userwrap.open-menu {
-    max-height: 400px;
-  }
+header .home{
+  border-bottom: 2px solid var(--headingUnderline) ; 
+  color: var(--headingOnPage)
+}
+header ul li a{
+  color:white;
+  font-size: 20px;
+}
+header ul li a:hover{
+  color:#000000
+}
+header .dropdown{
+  display: none;
+}
+header ul li:hover .dropdown{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color:var(--headingColor);
+}
+.dropdown ul{
+  display: block;
+  margin: 10px;
+  background: var(--headingColor);
+}
+header .dropdown ul li{
+  width: 100%;
+  padding: 5px;
+  background: var(--headingColor);
+}
+header .dropdown ul li a{
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+header .dropdown ul li a:hover{
+  cursor: pointer;
+  color: #060606;
+}
+/* User icon */
+.usernav{
+  padding: 19px 80px 15px 30px;
+}
 
-  .usersubmenu{
-    background: #fff;
-    padding: 20px;
-    margin: 10px
-  }
+.usernav img{
+  cursor: pointer;
+}
+.userwrap {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-hieght 0.5s;
+}
+.userwrap.open-menu {
+  max-height: 400px;
+}
 
-  .userinfor{
-    display: flex;
-    align-items: center;
-  }
-  .userinfor h2{
-    font-weight: 10;
-    font-size: 20px;
-  }
-  .userinfor img{
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
+.usersubmenu{
+  background: #fff;
+  padding: 20px;
+  margin: 10px
+}
 
-  .usersubmenu hr{
-    border: 0;
-    height: 1px;
-    width: 100%;
-    background: #ccc;
-    margin: 15px 0 10px;
-  }
+.userinfor{
+  display: flex;
+  align-items: center;
+}
+.userinfor h2{
+  font-weight: 10;
+  font-size: 20px;
+}
+.userinfor img{
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
 
-  .submenulink{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #525252;
-    margin: 12px 0;
-  }
+.usersubmenu hr{
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
 
-  .submenulink p{
-    width: 60%;
-    font-size: 15px;
-    transition: transform 0.5s;
-  }
+.submenulink{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
 
-  .submenulink img{
-    width: 50px;
-    height: 50px;
-    background: #e5e5e5;
-    border-radius: 50%;
-    padding: 8px;
-    margin-right: 15px;
-  }
+.submenulink p{
+  width: 60%;
+  font-size: 15px;
+  transition: transform 0.5s;
+}
 
-  .submenulink span{
-    font-size: 20px;
-    transition: transform 0.5s;
-  }
+.submenulink img{
+  width: 50px;
+  height: 50px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
 
-  .submenulink:hover span{
-    transform: translateX(5px);
-  }
+.submenulink span{
+  font-size: 20px;
+  transition: transform 0.5s;
+}
 
-  .submenulink:hover p{
-    font-weight: 600;
-  }
+.submenulink:hover span{
+  transform: translateX(5px);
+}
 
-  /* Search bar */
-  .searchbar{
-    position: absolute;
-    top:20px;
-    right: 9%;
-    transform: translate(40%,-5%);
-    background-color: #ffffff;
-    height: 30px;
-    border-radius: 40px;
-    padding: 5px;
-  }
+.submenulink:hover p{
+  font-weight: 600;
+}
+
+/* Search bar */
+.searchbar{
+  position: fixed;
+  top:21px;
+  right: 8%;
+  transform: translate(40%,-5%);
+  background-color: #ffffff;
+  height: 30px;
+  border-radius: 40px;
+  padding: 5px;
+}
 .searchbar:hover > .searchTxt{
-  width: 100px;
-  padding: 0 6px;
+width: 100px;
+padding: 0 6px;
 }
 .searchbar:hover > .searchButton{
-  background: rgba(194, 235, 213, 0.425);
+background: rgba(194, 235, 213, 0.425);
 }
-  .searchButton{
-    color: #000000;
-    float: right;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-  }
+.searchButton{
+  color: #000000;
+  float: right;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
 
-  .searchTxt{
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: rgb(0, 0, 0);
-    font-size: 12px;
-    transition: 0.4s;
-    line-height: 20px;
-    width: 0px;
-    text-align: left;
-    justify-content: center;
-  }
+.searchTxt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  transition: 0.4s;
+  line-height: 20px;
+  width: 0px;
+  text-align: left;
+  justify-content: center;
+}
+
 
 /* Footer Section */
 footer{
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background: linear-gradient(to right, #54ce62, #46ec1c85);
-  color: #fff;
-  padding: 100px 0 30px;
-  border-top-left-radius: 125px;
-  font-size: 16px;
-  line-height: 20px;
+width: 100%;
+position: fixed;
+bottom: 0;
+background: var(--footerColor);
+color: #fff;
+padding: 100px 0 30px;
+border-top-left-radius: 125px;
+font-size: 16px;
+line-height: 20px;
 }
 footer .row {
-  width: 85%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
+width: 85%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: space-between;
 }
 footer .col{
-  flex-basis: 25%;
-  padding: 10px;
+flex-basis: 25%;
+padding: 10px;
 }
 footer .col:nth-child(2),footer .col:nth-child(3){
-  flex-basis: 15%;
+flex-basis: 15%;
 }
 /* logo picture */
 footer .logo{
-  width: 80px;
-  margin-bottom: 30px;
+width: 80px;
+margin-bottom: 30px;
 }
 footer .col h3{
-  width: fit-content;
-  margin-bottom: 40px;
-  position: relative;
+width: fit-content;
+margin-bottom: 40px;
+position: relative;
 }
 footer .emailId{
-  width: fit-content;
-  text-decoration: none;
-  border-bottom: 1px solid rgb(255, 255, 255,0.7);
-  margin: 20px 0;
+width: fit-content;
+text-decoration: none;
+border-bottom: 1px solid rgb(255, 255, 255,0.7);
+margin: 20px 0;
 }
 footer ul li{
-  list-style: none;
-  margin-bottom: 12px;
+list-style: none;
+margin-bottom: 12px;
 }
 footer ul li a{
-  text-decoration: none;
-  color:#fff
+text-decoration: none;
+color:#fff
 }
 footer ul li a:hover{
-  text-decoration: underline;
-  transition: 0.5s;
+text-decoration: underline;
+transition: 0.5s;
 }
 
 footer form{
-  padding-bottom: 15px;
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid rgb(255, 255, 255);
-  margin-bottom: 50px;
+padding-bottom: 15px;
+display:flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 1px solid rgb(255, 255, 255);
+margin-bottom: 50px;
 }
 
 footer form .fa-regular{
-  font-size: 18px;
-  margin-right: 10px;
+font-size: 18px;
+margin-right: 10px;
 }
 footer form input{
-  width: 100%;
-  background: transparent;
-  color:rgb(255, 255, 255);
-  border: 0;
-  outline: none;
+width: 100%;
+background: transparent;
+color:rgb(255, 255, 255);
+border: 0;
+outline: none;
 }
 footer::placeholder{
-  color: rgb(243, 239, 239);
+color: rgb(243, 239, 239);
 }
 footer form button{
-  background: transparent;
-  border: 0;
-  outline: none;
-  cursor: pointer
+background: transparent;
+border: 0;
+outline: none;
+cursor: pointer
 }
 footer form button .fa-solid{
-  font-size: 16px;
-  color: rgb(163, 15, 15);
+font-size: 16px;
+color: rgb(163, 15, 15);
 }
 footer .socialIcons .fa-brands{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  font-size: 20px;
-  color: rgb(8, 8, 8);
-  background: #fff;
-  margin-right: 15px;
-  cursor: pointer;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-size: 20px;
+color: rgb(8, 8, 8);
+background: #fff;
+margin-right: 15px;
+cursor: pointer;
 }
 
 footer hr{
-  width: 90%;
-  border: 0;
-  border-bottom: 1px solid rgba(116, 113, 113, 0.932);
-  margin: 20px auto;
+width: 90%;
+border: 0;
+border-bottom: 1px solid rgba(116, 113, 113, 0.932);
+margin: 20px auto;
 }
 
 footer .copyright{
-  text-align: center;
-  font-size: 12px;
+text-align: center;
+font-size: 12px;
 }
