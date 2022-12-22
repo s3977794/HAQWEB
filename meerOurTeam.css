@@ -1,0 +1,284 @@
+:root{
+    --headingColor: #72f563;
+    --headingSpan:rgb(45, 170, 41);
+    --headingUnderline: rgb(0, 0, 0);
+    --headingOnPage: rgb(0, 0, 0);
+    --mainFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --footerColor: linear-gradient(to right, #54ce62, #08ff98);
+    }
+
+
+header .dropdown ul li a{
+    border-bottom: 1px solid var(--headingUnderline);
+    color: var(--headingOnPage);
+}
+
+.meetOurTeamHeading{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 0;
+    align-items: center;
+ }
+ .meetOurTeamHeading img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ .meetOurTeamHeadingText{
+   background: linear-gradient(90deg, #00e4d1, #61ee2a);
+   text-transform: uppercase;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   position: absolute;
+   font-size: 5vh;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-family: var(--mainFont);
+ }
+section{
+    background: linear-gradient(90deg, rgb(223, 245, 222), rgb(49, 248, 165));
+    margin:  5%;
+    border-radius: 20px; 
+
+}
+
+.intro{
+    text-align: center;
+    font-size: 3vh;
+    padding: 2% 0 0 0;
+    background: linear-gradient(90deg, #cc00ff, #377cd6);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.people{
+   position: relative;
+    display: flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(240, 239, 239, 0.459);
+    margin: 2%;
+}
+
+
+
+
+
+.card-wrapper{
+
+    display: flex;
+
+    align-items: center;
+
+    align-content: center;
+
+    flex-direction: column;
+
+    
+
+}
+
+.card{
+    
+    border-radius: 10px;
+
+    width:32rem;
+
+    background-color: #ebeef8;
+
+    display:flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 2rem 0;
+
+    box-shadow: 0.5rem 0.5rem 3rem rgba(0,0,0,0.2);
+
+}
+
+
+
+.card .card-img{
+    border-radius: 10px;
+
+    width: 100%;
+
+    height:26rem;
+
+    object-fit: cover;
+
+    --webkit-clip-path: polygon(0,0, 100% 0, 100% 78%, 0% 100%);
+
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+
+}
+
+
+
+.profile-img{
+
+    width: 15rem;
+
+    height: 15rem;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-top: -10rem;
+
+    z-index: 999;
+
+    border: 1rem solid #ebeef8;
+
+}
+
+
+
+.card h1{
+
+    font-size: 2.5rem;
+
+    color: #333;
+
+    margin: 1.5rem 0;
+
+}
+
+
+
+.job-title{
+
+    color: #777;
+
+    font-size: 2rem;
+
+    font-weight: 300;
+
+}
+
+
+
+.about{
+
+    font-size: 1.5rem;
+
+    margin: 1.5rem 0;
+
+    font-style: italic;
+
+    text-align: center;
+
+    color: #333;
+
+}
+
+
+
+.read-more-btn{
+
+    display:inline-block;
+
+    padding: 1rem 2.5rem;
+
+    background: var(--orange);
+
+    border: .2rem solid var(--orange);
+
+    border-radius: 2rem;
+
+    margin: 1rem 0;
+
+    text-transform: uppercase;
+
+    color: rgb(156, 153, 153);
+
+    font-size: 1.4rem;
+
+    cursor: pointer;
+
+    transition: all 0.5s;
+
+}
+
+
+
+.read-more-btn:hover{
+
+    transform: translateY(-2px);
+
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0,0,0,0.2);
+
+    background: rgba(255,165,0,0.2);
+
+    color:var(--orange);
+
+}
+
+
+
+.read-more-btn:active{
+
+    transform: translateY(0);
+
+    box-shadow: none;
+
+}
+
+
+
+.social-media{
+
+    width:100%;
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content:  space-evenly;
+
+    padding: 2rem 0;
+
+    margin-top: 1.5rem;
+
+    border-top: 1px solid rgba(0,0,0,0.1);
+
+}
+
+
+
+.social-media i{
+
+    font-size: 3rem;
+
+}
+
+
+
+.fa-facebook-square{
+
+    color: #3b5999;
+
+}
+
+
+
+.fa-google{
+
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+
+    -webkit-text-fill-color: transparent;
+
+}
