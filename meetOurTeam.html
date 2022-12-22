@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Header and footer.css">
+    <link rel="stylesheet" href="meerOurTeam.css">
+    <title>Meet Our Team</title>
+    <script src="https://kit.fontawesome.com/6f8d1d8e9d.js"></script>
+</head>
+<body>
+    <!--Begin header section-->
+        <header>
+            <h1 class="logo">ANEMO<br> 
+                <span>WANDERER</span></h1>
+            <ul>
+                <li><a class="home" href="Main.html">Home</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li>
+                    <a href="About-us.html">About Us</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="meetOurTeam.html">Meet Our Team</a></li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <div class="usernav">
+                    <img src="HtmlPicture/user.png" alt="User Profile" style="width: 30px;height: 30px;" onclick="toggleMenu()">
+                    <div class="userwrap" id="subMenu">
+                        <div class="usersubmenu">
+                            <div class="userinfor">
+                                <img src="HtmlPicture/user.png" alt="User Image" >
+                                <h2>Anemo Wanderer</h2>
+                            </div>
+                            <hr>
+                            <a href="userProfile.html" class="submenulink">
+                                <img src="HtmlPicture/gear.png">
+                                <p>Account</p>
+                                <span>></span>
+                            </a>
+                            <a href="userLogin.html" class="submenulink">
+                                <img src="HtmlPicture/login.png">
+                                <p>Login</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="submenulink">
+                                <img src="HtmlPicture/log-out.png">
+                                <p>Logout</p>
+                                <span>></span>
+                            </a>
+                        </div>
+                    </div>             
+                </div>
+                
+                <div class="searchbar">
+                    <input class="searchTxt" type="text" name="" placeholder="Type to search">
+                    <a class="searchButton" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+    <script>
+        let subMenu =document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu")
+        }
+    </script>
+            </ul>
+        </header>
+    <!--End header section-->
+    
+    <!--Begin meet our team-->
+    
+    <div class="meetOurTeamHeading">
+        <img src="HtmlPicture/Background.png">
+    
+        <div class="meetOurTeamHeadingText">
+            <h1>Meet Our Team</h1>
+        </div>
+    </div>
+    <section>
+        <div class="intro">
+            <h1>Anemo Wanderer Staffs</h1>
+        </div>
+        <div class="people">
+            <div class="card">
+
+                <img src="HtmlPicture/Background.png" alt="card background" class="card-img">
+
+                <img src="HtmlPicture/Quang.JPG" alt="profile image" class="profile-img">
+
+                <h1>Le Dang Quang</h1>
+
+                <p class="job-title">Lead Developer</p>
+
+                <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+
+                nisi ut aliquip ex ea commodo consequat.
+
+                </p>
+
+                <a href="#" class="read-more-btn">read more</a>
+
+                <ul class="social-media">
+
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+
+                <li><a href="#"><i class="fab fa-google"></i></a></li>
+
+                </ul>
+
+            </div>
+            <div class="card">
+
+                <img src="HtmlPicture/Background.png" alt="card background" class="card-img">
+
+                <img src="HtmlPicture/Han.png" alt="profile image" class="profile-img">
+
+                <h1>Tran Ngoc Han</h1>
+
+                <p class="job-title">Lead Developer</p>
+
+                <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+
+                nisi ut aliquip ex ea commodo consequat.
+
+                </p>
+
+                <a href="#" class="read-more-btn">read more</a>
+
+                <ul class="social-media">
+
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+
+                <li><a href="#"><i class="fab fa-google"></i></a></li>
+
+                </ul>
+
+            </div>
+            <div class="card">
+
+                <img src="HtmlPicture/Background.png" alt="card background" class="card-img">
+
+                <img src="HtmlPicture/ThoAnh.png" alt="profile image" class="profile-img">
+
+                <h1>Hoang Tho Anh</h1>
+
+                <p class="job-title">Lead Developer</p>
+
+                <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+
+                nisi ut aliquip ex ea commodo consequat.
+
+                </p>
+
+                <a href="#" class="read-more-btn">read more</a>
+
+                <ul class="social-media">
+
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+
+                <li><a href="#"><i class="fab fa-google"></i></a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </section>
+    <!--End meet our team-->
+
+    
+    <!--Begin footer-->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="HtmlPicture/paper-plane.png" class="logo">
+                <p>We are here to assist you to a new world! Please follow us to have more information. We hope you will have awesome time!</p>
+            </div>
+            <div class="col">
+                <h3>
+                    Location
+                </h3>
+                <p>
+                    702 Đ. Nguyễn Văn Linh, Tân Hưng, Quận 7, Thành phố Hồ Chí Minh 700000, Vietnam
+                </p>
+                
+                <p class="emailId">
+                    Email:
+                    anemowanderer@hotmail.com
+                </p>
+                 <h4>+84 099999999</h4>
+            </div>
+            <div class="col">
+                <h3>
+                    Links
+                </h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>News</h3>
+                <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email for more information" required>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </form>
+                <div class="socialIcons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">ANEMO WANDERER &copy;2022 - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

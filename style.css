@@ -60,7 +60,7 @@ header ul li{
 
 header .home{
   border-bottom: 2px solid var(--headingUnderline) ; 
-  color: var(--headingOnPage)
+  color: var(--headingOnPage);
 }
 header ul li a{
   color:white;
@@ -114,7 +114,7 @@ header .dropdown ul li a:hover{
   width: 320px;
   max-height: 0px;
   overflow: hidden;
-  transition: max-hieght 0.5s;
+  transition: 0.5s;
 }
 .userwrap.open-menu {
   max-height: 400px;

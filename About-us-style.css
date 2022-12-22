@@ -113,7 +113,7 @@
     width: 320px;
     max-height: 0px;
     overflow: hidden;
-    transition: max-hieght 0.5s;
+    transition: 0.5s;
   }
   .userwrap.open-menu {
     max-height: 400px;
@@ -228,6 +228,7 @@
     text-align: left;
     justify-content: center;
   }
+/*End search bar*/
 /* Start About Us */
 section{
   align-items: center;
@@ -251,7 +252,7 @@ section{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  font-size: 50px;
+  font-size: 6vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

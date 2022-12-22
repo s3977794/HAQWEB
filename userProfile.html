@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anemo Wanderer</title>
     <script src="https://kit.fontawesome.com/6f8d1d8e9d.js"></script>
+    <link rel="stylesheet" href="Header and footer.css">
+    <link rel="stylesheet" href="userProfile.css">
 </head>
 <body>
 <!--Begin header section-->
@@ -35,9 +37,9 @@
                             <h2>Anemo Wanderer</h2>
                         </div>
                         <hr>
-                        <a href="#" class="submenulink">
+                        <a  href="userProfile.html" class="submenulink">
                             <img src="HtmlPicture/gear.png">
-                            <p>Account</p>
+                            <p class="account">Account</p>
                             <span>></span>
                         </a>
                         <a href="userLogin.html" class="submenulink">
@@ -67,8 +69,91 @@
         </ul>
     </header>
 <!--End header section-->
+<!--Start Account-->
 
+<section>
+    <div class="sidebarContent">
+        <div class="userImage">
+            <img src="HtmlPicture/user.png" alt="User Image">
+            <h1>Anemo Wanderer</h1>
+        </div>
+        <div class="userInformation">
+            <a href="userProfile.html"><h2>Profile</h2></a>
+            <a href="userPersonalities.html"><h2>Personality</h2></a>
+            <a href="userChangePassword.html"><h2>Change Password</h2></a>
+        </div>
+    </div>
+    <div class="mainContentProfile" id="Profile">
+        <div class="mainContentProfileHeading">
+            <h1>About</h1>
+            <h2>Manage user profile</h2>
+        </div>
+        <div class="mainContentProfileContainer">
+            <div class="mainContentProfileContent">
+                <div class="mainContentProfileContentDetail">
+                    <div class="textField">
+                        <p>User Account</p>
+                    </div>
+                    <div class="informationField">
+                        <p>Anemo Wanderer User</p>
+                    </div>
+                </div>
+                    
+                <div class="mainContentProfileContentDetail">
+                    <div class="textField">
+                        <label for="name">Name</label></div>
+                    <div class="informationField">
+                        <input class="placeHolder" type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="mainContentProfileContentDetail">
+                    <div class="textField">
+                        <p>Email</p>
+                    </div>
+                    <div class="informationField">
+                        <p>anemorwanderer@gmail.com</p>
+                    </div>
+                </div>
+                <div class="mainContentProfileContentDetail">
+                    <div class="textField">
+                        <p>Phone number</p>
+                    </div>
+                    <div class="informationField">
+                        <p>037826489</p>
+                    </div>
+                </div>  
+                <div class="mainContentProfileContentDetail">
+                    <div class="textField">
+                        <p>Sex</p>
+                    </div>
+                    <div class="informationField">
+                        <form>
+                            <input type="radio" id="Male" name="sex" value="Male">
+                            <label for="Male">Male</label>
+                            <input type="radio" id="Female" name="sex" value="Female">
+                            <label for="Female">Female</label>
+                            <input type="radio" id="Others" name="sex" value="Others">
+                            <label for="Others">Others</label>
+                        </form>  
+                    </div>
+                </div>
+                <div class="mainContentProfileContentDetail">
+                    <div class="textField">
+                        <label for="DOB">Date of birth</label>
+                    </div> 
+                    <div class="informationField">
+                        <input class="placeHolder" type="date"  id="DOB">
+                    </div>
+                </div>
+                <div class="saveButton">
+                    <input type="submit" value="Save">
+                </div>       
+            </div>
+        </div>
+    </div>
+</section>
 
+<!--End Account-->
 <!--Begin footer-->
 <footer>
     <div class="row">
