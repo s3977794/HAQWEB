@@ -1,239 +1,3 @@
-*{
-    font-family: 'Nunito', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    transition: all .7s linear;
-  }
-  /* Set variable */
-:root{
-  --headingColor: #72f563;
-  --headingSpan:rgb(45, 170, 41);
-  --headingUnderline: rgb(0, 0, 0);
-  --headingOnPage: rgb(0, 0, 0);
-  --mainFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  --footerColor: linear-gradient(to right, #54ce62, #08ff98);
-  --acountBorderColor:rgba(66, 66, 66, 0.658);
-}
-
-  html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 6rem;
-    scroll-behavior: smooth;
-    background-color: rgb(218, 255, 213);
-}
-/* Header */
-  header{
-    position: sticky;
-    top: 0;left: 0;right: 0;
-    background: var(--headingColor);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10% ;
-  }
-
-  .logo{
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-    
-  }
-
-  .logo span{
-    color: var(--headingSpan);
-  }
-
-  header ul{
-    list-style: none;
-    display: flex;
-    padding-left: -10px;
-    transition: 0.5s;
-  }
-  header ul li{
-    padding: 24px 30px 10px ;
-    position: relative;
-  }
-  
-  header .aboutUs{
-    border-bottom: 2px solid var(--headingUnderline) ; 
-    color: var(--headingOnPage)
-  }
-  header ul li a{
-    color:white;
-    font-size: 20px;
-  }
-  header ul li a:hover{
-    color:#000000
-  }
-  header .dropdown{
-    display: none;
-  }
-  header ul li:hover .dropdown{
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    background-color:var(--headingColor);
-  }
-  .dropdown ul{
-    display: block;
-    margin: 10px;
-    background: var(--headingColor);
-  }
-  header .dropdown ul li{
-    width: 100%;
-    padding: 5px;
-    background: var(--headingColor);
-  }
-  header .dropdown ul li a{
-    text-align: center;
-    font-size: 16px;
-    color: #fff;
-  }
-  header .dropdown ul li a:hover{
-    cursor: pointer;
-    color: #060606;
-  }
-  /* User icon */
-  .usernav{
-    padding: 19px 80px 15px 30px;
-  }
-
-  .usernav img{
-    cursor: pointer;
-  }
-  .usernav .highlight{
-    text-decoration: underline;
-    font-weight: 600;
-  }
-  .userwrap {
-    position: absolute;
-    top: 100%;
-    right: 10%;
-    width: 320px;
-    max-height: 0px;
-    overflow: hidden;
-    transition: 0.5s;
-  }
-  .userwrap.open-menu {
-    max-height: 400px;
-  }
-
-  .usersubmenu{
-    background: #fff;
-    padding: 20px;
-    margin: 10px
-  }
-
-  .userinfor{
-    display: flex;
-    align-items: center;
-  }
-  .userinfor h2{
-    font-weight: 10;
-    font-size: 20px;
-  }
-  .userinfor img{
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-
-  .usersubmenu hr{
-    border: 0;
-    height: 1px;
-    width: 100%;
-    background: #ccc;
-    margin: 15px 0 10px;
-  }
-
-  .submenulink{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #525252;
-    margin: 12px 0;
-  }
-
-  .submenulink p{
-    width: 60%;
-    font-size: 15px;
-    transition: transform 0.5s;
-  }
-
-  .submenulink img{
-    width: 50px;
-    height: 50px;
-    background: #e5e5e5;
-    border-radius: 50%;
-    padding: 8px;
-    margin-right: 15px;
-  }
-
-  .submenulink span{
-    font-size: 20px;
-    transition: transform 0.5s;
-  }
-
-  .submenulink:hover span{
-    transform: translateX(5px);
-  }
-
-  .submenulink:hover p{
-    font-weight: 600;
-  }
-
-  /* Search bar */
-  .searchbar{
-    position: fixed;
-    top:21px;
-    right: 8%;
-    transform: translate(40%,-5%);
-    background-color: #ffffff;
-    height: 30px;
-    border-radius: 40px;
-    padding: 5px;
-  }
-.searchbar:hover > .searchTxt{
-  width: 100px;
-  padding: 0 6px;
-}
-.searchbar:hover > .searchButton{
-  background: rgba(194, 235, 213, 0.425);
-}
-  .searchButton{
-    color: #000000;
-    float: right;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-  }
-
-  .searchTxt{
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: rgb(0, 0, 0);
-    font-size: 12px;
-    transition: 0.4s;
-    line-height: 20px;
-    width: 0px;
-    text-align: left;
-    justify-content: center;
-  }
-/*End search bar*/
 /*Start Highlight Account Setting*/
   header .usernav .account{
     font-weight: bolder;
@@ -290,14 +54,14 @@ section .userImage h1{
 }
 .mainContentProfileHeading{
   text-align: left;
-  font-size: 2vh;
+  font-size: 3vh;
   margin: 0 10px;
   border-bottom: 1px solid rgb(114, 111, 111);
   padding-bottom: 1px;
 }
 .mainContentProfileContainer{
   padding: 30px 50px 10px 50px;
-  font-size: 20px;
+  font-size: 16px;
   display: flex;
 }
 .mainContentProfileContentDetail{
@@ -305,11 +69,12 @@ section .userImage h1{
   justify-content: flex-end;
   align-items: center;
   padding-bottom: 30px;
-  background: yellowgreen;
   width: 40vw;
+  overflow: hidden;
+  border-right: 1px solid #4e4e4e94;
 }
 .textField{
-  width: 20%;
+  width: 30%;
 }
 .placeHolder{
   width: 10vw;
@@ -318,7 +83,7 @@ section .userImage h1{
 }
 .informationField{
   width: 80%;
-  padding-left: 10px;
+  padding-left: 40px;
 }
 .saveButton input{
   background: rgba(52, 242, 55, 0.668);
@@ -328,13 +93,20 @@ section .userImage h1{
 .mainContentPassword{
   display: none;
 }
+/*Change avatar*/
+.changeAvatar{
+  width: 100%;
+}
 .profilePic{
-  position: static;
+  position: relative;
   transform: translate(0%, 0%);
   overflow: hidden;
   border-radius: 50%;
   border: 1px solid grey;
-  width: 100%;
+  width: 10vw;
+  height: 10vw;
+  margin-top: 30%;
+  margin-left: 22%;
 }
 #photo{
   height: 100%;
@@ -344,8 +116,8 @@ section .userImage h1{
   display: none;
 }
 #uploadPic{
-  height: 10vh;
   width: 100%;
+  height: 7vh;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -355,8 +127,12 @@ section .userImage h1{
   color: white;
   line-height: 30px;
   font-family: inherit;
-  font-size: 15px;
+  font-size: 13px;
   cursor: pointer;
   display: none;
+}
+.changeAvatar p{
+  font-size: 2vh;
+  padding-top: 10px;
 }
 /*End Account Setting*/

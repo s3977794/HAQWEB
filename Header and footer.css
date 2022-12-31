@@ -59,7 +59,7 @@
   
   header ul li a{
     color:white;
-    font-size: 20px;
+    font-size: 17px;
   }
   header ul li a:hover{
     color:#000000
@@ -87,7 +87,7 @@
   }
   header .dropdown ul li a{
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
   }
   header .dropdown ul li a:hover{
