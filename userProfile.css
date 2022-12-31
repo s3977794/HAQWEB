@@ -296,14 +296,17 @@ section .userImage h1{
   padding-bottom: 1px;
 }
 .mainContentProfileContainer{
-  padding: 30px 0 10px 50px;
+  padding: 30px 50px 10px 50px;
   font-size: 20px;
+  display: flex;
 }
 .mainContentProfileContentDetail{
   display: flex ;
   justify-content: flex-end;
   align-items: center;
   padding-bottom: 30px;
+  background: yellowgreen;
+  width: 40vw;
 }
 .textField{
   width: 20%;
@@ -325,5 +328,35 @@ section .userImage h1{
 .mainContentPassword{
   display: none;
 }
-
+.profilePic{
+  position: static;
+  transform: translate(0%, 0%);
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid grey;
+  width: 100%;
+}
+#photo{
+  height: 100%;
+  width: 100%;
+}
+#file{
+  display: none;
+}
+#uploadPic{
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: #000000a7;
+  color: white;
+  line-height: 30px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  display: none;
+}
 /*End Account Setting*/
