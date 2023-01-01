@@ -14,6 +14,7 @@
 --headingOnPage: rgb(0, 0, 0);
 --mainFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 --footerColor: linear-gradient(to right, #54ce62, #08ff98);
+--orange: rgb(255, 175, 71);
 }
 
 html{
@@ -38,8 +39,6 @@ header{
 .logo{
   color: white;
   font-size: 25px;
-  cursor: pointer;
-  
 }
 
 .logo span{
@@ -229,17 +228,85 @@ background: rgba(194, 235, 213, 0.425);
   text-align: left;
   justify-content: center;
 }
+/* End header section */
+
+
+/* Start Main Page */
+section{
+  padding: 2rem 9%;
+}
+.homePage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+  height: 95vh;
+}
+.homePage .homePageContent{
+  text-align: center;
+}
+.homePage .homePageContent h3{
+  font-size: 4.5rem;
+  background: linear-gradient(90deg, #5eff00, #7fff08);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  text-shadow: 0 .3rem 0.5 #00000002;
+}
+.homePage .homePageContent p{
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #00e4d1, #61ee2a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: .5rem 0;
+  margin-bottom: 50px;
+}
+.homePageContent a{
+  background: #35ff56e8;
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+.homePageContent a:hover{
+  border: 4px solid #35ff56e8;
+  background: white;
+  color:#000000b4;
+  transition: 0;
+}
+.homePage .video-container video{
+  position: absolute;
+  top:0; left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.homePage .homePageControl .vid-btn{
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  margin: 0 .5rem;
+}
+
+/* End Main Page */
 
 
 /* Footer Section */
 footer{
 width: 100%;
-position: fixed;
+position: static;
 bottom: 0;
 background: var(--footerColor);
 color: #fff;
 padding: 100px 0 30px;
-border-top-left-radius: 125px;
 font-size: 16px;
 line-height: 20px;
 }

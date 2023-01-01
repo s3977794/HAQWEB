@@ -261,35 +261,33 @@ section{
 .aboutUsHeadingMainContent{
   display: flex;
   width: 100%;
-  margin: 100px 50px 5
-  
-  0px 0;
-  background: #ccf0bc;
+  padding-bottom: 10px;
 }
 
 .aboutUsHeadingContent h2{
   text-align: center;
-  font-size: 5vw;
+  font-size: 3vw;
   font-family: 'Times New Roman', Times, serif;
   padding: 30px 0 0 0;
 }
 .aboutUsHeadingContent h3{
   text-align: center;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: 'Times New Roman', Times, serif;
   padding: 0 0 30px 0 ;
+  text-decoration: underline;
 }
 
 .aboutUsHeadingMainContentTxt{
   text-align: left;
 }
 .aboutUsHeadingMainContentTxt h4{
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 50px;
   font-family:'Playfair Display', serif;
 }
 .aboutUsHeadingMainContentTxt p{
-  font-size: 30px;
+  font-size: 24px;
   font-family:'Playfair Display', serif;
   text-indent: 90px;
 }
