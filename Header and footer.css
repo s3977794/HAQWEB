@@ -12,7 +12,9 @@
     --headingSpan:rgb(45, 170, 41);
     --headingUnderline: rgb(0, 0, 0);
     --headingOnPage: rgb(0, 0, 0);
+    --mainFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --footerColor: linear-gradient(to right, #54ce62, #08ff98);
+    --acountBorderColor:rgba(66, 66, 66, 0.658);
   }
 
   html{
