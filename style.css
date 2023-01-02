@@ -249,17 +249,15 @@ section{
 }
 .homePage .homePageContent h3{
   font-size: 4.5rem;
-  background: linear-gradient(90deg, #5eff00, #7fff08);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color:#43f358;
+  text-shadow: 2px 2px 8px black;
   text-transform: uppercase;
   text-shadow: 0 .3rem 0.5 #00000002;
 }
 .homePage .homePageContent p{
   font-size: 2.5rem;
-  background: linear-gradient(90deg, #00e4d1, #61ee2a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2ef3a1;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
   padding: .5rem 0;
   margin-bottom: 50px;
 }
@@ -271,6 +269,7 @@ section{
   padding: 10px;
   color: white;
   border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.719);
 }
 .homePageContent a:hover{
   border: 4px solid #35ff56e8;
