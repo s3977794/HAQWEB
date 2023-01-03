@@ -1,1 +1,1 @@
-document.querySelector('video').playbackRate = 3;
+document.querySelector('video').playbackRate = 2.5;
