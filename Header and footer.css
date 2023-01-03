@@ -58,7 +58,10 @@
     position: relative;
   }
   
-  
+  .onPage{
+    border-bottom: 2px solid var(--headingUnderline) ; 
+  color: var(--headingOnPage);
+}
   header ul li a{
     color:white;
     font-size: 17px;

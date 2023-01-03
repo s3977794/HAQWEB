@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Anemo Wanderer</title>
     <script src="https://kit.fontawesome.com/6f8d1d8e9d.js"></script>
+    <link rel="stylesheet" href="Header and footer.css">
+    <link rel="stylesheet" href="safetyGuidelines.css">
 </head>
 <body>
 <!--Begin header section-->
@@ -13,7 +14,7 @@
         <h1 class="logo">ANEMO<br> 
             <span>WANDERER</span></h1>
         <ul>
-            <li><a class="onPage" href="Main.html">Home</a></li>
+            <li><a href="Main.html">Home</a></li>
             <li>
                 <a class="service" href="Service.html">Service</a>
                 <div class="dropdown">
@@ -35,8 +36,7 @@
                     </ul>
                 </div>
             </li>
-            <li><a href="safetyGuidelines.html">Safety Guidelines</a></li>
-
+            <li><a class="onPage" href="safetyGuidelines.html">Safety Guidelines</a></li>
 
             <div class="usernav">
                 <img src="HtmlPicture/user.png" alt="User Profile" style="width: 30px;height: 30px;" onclick="toggleMenu()">
@@ -47,7 +47,7 @@
                             <h2>Anemo Wanderer</h2>
                         </div>
                         <hr>
-                        <a href="userProfile.html" class="submenulink">
+                        <a href="#" class="submenulink">
                             <img src="HtmlPicture/gear.png">
                             <p>Account</p>
                             <span>></span>
@@ -79,20 +79,6 @@
         </ul>
     </header>
 <!--End header section-->
-
-<!-- Start home section -->
-<section class="homePage" id="home">
-    <div class="homePageContent">
-        <h3>Adventure is worthwhile</h3>
-        <p>Discover new places with us, adventure awaits!</p>
-        <a href="#">Discover more</a>
-    </div>
-    <div class="video-container">
-        <video src="videos/videoplayback.mp4" id="video-slider" loop autoplay muted></video> 
-        <script src="Main.js"></script>
-    </div>
-</section>
-<!-- End home section -->
 
 
 <!--Begin footer-->

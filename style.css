@@ -57,7 +57,7 @@ header ul li{
 }
 
 
-header .home{
+.onPage{
   border-bottom: 2px solid var(--headingUnderline) ; 
   color: var(--headingOnPage);
 }
