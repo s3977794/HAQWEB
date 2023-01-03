@@ -231,63 +231,42 @@
 /*End search bar*/
 /* Start About Us */
 section{
-  align-items: center;
   position: relative;
-
-}
-.aboutUsHeading{
-   width: 100%;
-   height: 200px;
-   position: relative;
-   top: 0;
-}
-.aboutUsHeading img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.aboutUsHeadingText{
-  background: linear-gradient(90deg, #00e4d1, #61ee2a);
-  text-transform: uppercase;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  font-size: 6vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: var(--mainFont);
 }
 .aboutUsHeadingMainContent{
   display: flex;
   width: 100%;
-  padding-bottom: 10px;
+  overflow: auto;
+  padding: 50px;
 }
 
 .aboutUsHeadingContent h2{
   text-align: center;
   font-size: 3vw;
   font-family: 'Times New Roman', Times, serif;
-  padding: 30px 0 0 0;
+  padding: 10px 0 0 0;
 }
 .aboutUsHeadingContent h3{
   text-align: center;
   font-size: 2vw;
   font-family: 'Times New Roman', Times, serif;
-  padding: 0 0 30px 0 ;
+  padding: 0 0 10px 0 ;
   text-decoration: underline;
 }
 
 .aboutUsHeadingMainContentTxt{
   text-align: left;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  padding: 20px 0;
 }
 .aboutUsHeadingMainContentTxt h4{
-  font-size: 4vh;
+  font-size: 3vh;
   margin-left: 50px;
   font-family:'Playfair Display', serif;
 }
 .aboutUsHeadingMainContentTxt p{
-  font-size: 3.3vh;
+  font-size: 3vh;
   font-family:'Playfair Display', serif;
   text-indent: 90px;
 }
@@ -297,6 +276,7 @@ section{
 .aboutUsHeadingMainContentPic img{
   height: 100vh;
   width: 100vh;
+  padding-right: 20px;
 }
 
 

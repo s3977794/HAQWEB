@@ -1,0 +1,47 @@
+section{
+    position: relative;
+  }
+  .mainContentContainerHeading{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4vh;
+    text-transform: capitalize;
+    padding: 10px 60px 0 0 ;
+    background: linear-gradient(90deg, #d8fdda, #0da853);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+  .mainContentContainerHeading h2{
+    padding-left: 250px;
+  }
+  .mainContentDetailContainer{
+    display: flex;
+    width: 100%;
+    padding: 20px 50px 50px ;
+  }
+  .mainContentImageContainer{
+    width: 30%;
+  }
+  .mainContentImageContainer img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-left: 20px;
+  }
+  .mainContentDetail{
+    width: 70%;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding: 20px 0;
+  }
+  .mainContentDetail h1{
+    font-size: 3vh;
+    text-indent: 20px;
+  }
+  .mainContentDetail p{
+    font-size: 2.5vh;
+  }
+
