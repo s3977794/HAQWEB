@@ -246,7 +246,7 @@ section{
   font-family: 'Times New Roman', Times, serif;
   padding: 10px 0 0 0;
   padding: 10px 60px 0 0 ;
-  background: linear-gradient(90deg, #71e1e9, #ff21ff);
+  background: linear-gradient(90deg, #dd99fdaf, #f800d7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -254,7 +254,7 @@ section{
   text-align: center;
   font-size: 2vw;
   font-family: 'Times New Roman', Times, serif;
-  background: linear-gradient(90deg, #71e1e9, #ff21ff);
+  background: linear-gradient(90deg, #dd99fda9, #f800d7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -279,7 +279,7 @@ section{
   padding-right: 10px;
 }
 .aboutUsHeadingMainContentPic img{
-  height: 100vh;
+  height: 100%;
   width: 100vh;
   padding-right: 20px;
 }

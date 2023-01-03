@@ -8,47 +8,20 @@
     }
 
 
-header .dropdown ul li a{
+header .dropdown .onPage {
     border-bottom: 1px solid var(--headingUnderline);
     color: var(--headingOnPage);
 }
-
-.meetOurTeamHeading{
-    width: 100%;
-    height: 200px;
-    position: relative;
-    top: 0;
-    align-items: center;
- }
- .meetOurTeamHeading img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
- }
- .meetOurTeamHeadingText{
-   background: linear-gradient(90deg, #00e4d1, #61ee2a);
-   text-transform: uppercase;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   position: absolute;
-   font-size: 5vh;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-family: var(--mainFont);
- }
 section{
-    background: linear-gradient(90deg, rgb(223, 245, 222), rgb(49, 248, 165));
-    margin:  5%;
-    border-radius: 20px; 
-
+    background: linear-gradient(0deg, rgb(211, 248, 209), rgb(49, 248, 165));
+    margin: 0 2%;
+    border-radius: 40px;
 }
-
 .intro{
     text-align: center;
     font-size: 3vh;
     padding: 2% 0 0 0;
-    background: linear-gradient(90deg, #cc00ff, #377cd6);
+    background: linear-gradient(90deg, #f4d1fd, #051eff);
     text-transform: uppercase;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -60,6 +33,7 @@ section{
     align-items: center;
     background: rgba(240, 239, 239, 0.459);
     margin: 2%;
+    border-radius: 20px 20px 0 0;
 }
 
 
@@ -76,17 +50,33 @@ section{
 
     flex-direction: column;
 
-    
 
 }
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: -360deg;
+  }
+}
+
 
 .card{
+    transition: opacity 0.5s;
+
+    animation: spin 3s linear infinite;
     
     border-radius: 10px;
 
-    width:32rem;
+    width:38rem;
 
-    background-color: #ebeef8;
+    background-image: linear-gradient(  var(--rotate),  #ffffff,   #faf9d5a9 43%,#85ffa08a);
 
     display:flex;
 

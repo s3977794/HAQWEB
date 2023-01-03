@@ -64,7 +64,7 @@
 }
   header ul li a{
     color:white;
-    font-size: 17px;
+    font-size: 20px;
   }
   header ul li a:hover{
     color:#000000
@@ -82,7 +82,7 @@
   }
   .dropdown ul{
     display: block;
-    margin: 10px;
+    margin: 5px;
     background: var(--headingColor);
   }
   header .dropdown ul li{
@@ -92,7 +92,7 @@
   }
   header .dropdown ul li a{
     text-align: center;
-    font-size: 14px;
+    font-size: 17.3px;
     color: #fff;
   }
   header .dropdown ul li a:hover{
