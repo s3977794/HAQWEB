@@ -60,7 +60,7 @@ section .userImage h1{
 }
 .mainContentProfileContainer{
   padding: 30px 50px 10px 50px;
-  font-size: 16px;
+  font-size: 1.3vw;
   display: flex;
 }
 .mainContentProfileContentDetail{
