@@ -1,0 +1,38 @@
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: -360deg;
+    }
+  }
+body{
+    background: rgba(96, 247, 134, 0.63);
+}
+.mainContainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mainContainerHide{
+    position: absolute;
+    padding: 20px;
+    border-radius: 40px;
+    transition: opacity 0.5s;
+    background-image: linear-gradient(  var(--rotate),  #76f86a79,   #81ff8ca9 43%,#0cff79);
+    animation: spin 2s linear infinite;
+}
+.mainText h3{
+    font-size: 1.5vw;
+}
+
+.mainText p{
+    font-size: 2vw;
+}

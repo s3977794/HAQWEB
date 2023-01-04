@@ -4,7 +4,7 @@ section{
   .mainContentContainerHeading{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 4vh;
+    font-size: 2vw;
     text-transform: capitalize;
     padding: 10px 60px 0 0 ;
     background: linear-gradient(90deg, #d8fdda, #0da853);
@@ -37,10 +37,10 @@ section{
     padding: 20px 0;
   }
   .mainContentDetail h1{
-    font-size: 3vh;
+    font-size: 1.6vw;
     text-indent: 20px;
   }
   .mainContentDetail p{
-    font-size: 2.5vh;
+    font-size: 1.3vw;
   }
 
