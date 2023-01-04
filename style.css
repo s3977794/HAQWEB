@@ -285,15 +285,6 @@ section{
   width: 100%;
   object-fit: cover;
 }
-.homePage .homePageControl .vid-btn{
-  height: 2rem;
-  width: 2rem;
-  display: inline-block;
-  border-radius: 50%;
-  background: #fff;
-  cursor: pointer;
-  margin: 0 .5rem;
-}
 
 /* End Main Page */
 
