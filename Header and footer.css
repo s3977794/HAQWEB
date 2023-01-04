@@ -63,42 +63,44 @@
   color: var(--headingOnPage);
 }
   header ul li a{
-    color:white;
-    font-size: 20px;
-  }
-  header ul li a:hover{
-    color:#000000
-  }
-  header .dropdown{
-    display: none;
-  }
-  header ul li:hover .dropdown{
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    background-color:var(--headingColor);
-  }
-  .dropdown ul{
-    display: block;
-    margin: 5px;
-    background: var(--headingColor);
-  }
-  header .dropdown ul li{
-    width: 100%;
-    padding: 5px;
-    background: var(--headingColor);
-  }
-  header .dropdown ul li a{
-    text-align: center;
-    font-size: 17.3px;
-    color: #fff;
-  }
-  header .dropdown ul li a:hover{
-    cursor: pointer;
-    color: #060606;
-  }
+  color:white;
+  font-size: 1.2vw;
+}
+header ul li a:hover{
+  color:#000000;
+}
+header .dropdown{
+  display: none;
+}
+header ul li:hover .dropdown{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color:var(--headingColor);
+}
+.dropdown ul{
+  display: block;
+  background: var(--headingColor);
+}
+header .dropdown ul li{
+  width: 100%;
+  padding: 25px 10px;
+  background: var(--headingColor); 
+   text-align: center;
+}
+header .dropdown ul li:hover{
+  background: #00fc00;
+  transition: 0s;
+}
+header .dropdown ul li a{
+  font-size: 1vw;
+  color: #fff;
+}
+header .dropdown ul li a:hover{
+  cursor: pointer;
+}
   /* User icon */
   .usernav{
     padding: 19px 80px 15px 30px;

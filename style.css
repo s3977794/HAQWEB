@@ -63,7 +63,7 @@ header ul li{
 }
 header ul li a{
   color:white;
-  font-size: 20px;
+  font-size: 1.2vw;
 }
 header ul li a:hover{
   color:#000000;
@@ -81,22 +81,24 @@ header ul li:hover .dropdown{
 }
 .dropdown ul{
   display: block;
-  margin: 5px;
   background: var(--headingColor);
 }
 header .dropdown ul li{
   width: 100%;
-  padding: 5px;
-  background: var(--headingColor);
+  padding: 25px 10px;
+  background: var(--headingColor); 
+   text-align: center;
+}
+header .dropdown ul li:hover{
+  background: #00fc00;
+  transition: 0s;
 }
 header .dropdown ul li a{
-  text-align: center;
-  font-size: 17.3px;
+  font-size: 1vw;
   color: #fff;
 }
 header .dropdown ul li a:hover{
   cursor: pointer;
-  color: #060606;
 }
 /* User icon */
 .usernav{
