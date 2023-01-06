@@ -1,0 +1,196 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --mainColor: #63fc84;
+}
+
+section{
+    height: 95vh;
+    width: 100%;
+}
+section .mainHeading h1{
+    text-align: center;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 10vw;
+    background: linear-gradient(360deg, #70b87642, #1ebd10);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section .mainHeading h2{
+    text-align: center;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15vw;
+    background: linear-gradient(360deg, #70b87642, #1ebd10);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mainContainer{
+    width: 75%;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    background: rgb(176, 250, 186);
+    margin-top: 25px;
+    border-radius: 20px;
+}
+section .pickLocation{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    padding: 4vh 0 4vh;
+}
+section .pickLocation .pickText{
+    font-size: 1.3vw;
+    text-align: left;
+    color: rgba(17, 17, 17, 0.801);
+    width: 20%;
+}
+section .pickLocation .pickField{
+    width: 80%;
+}
+section .pickLocation .pickField select{
+    width: 100%;
+    height: 4vh;
+    color: rgb(75, 74, 74);
+    font-size: 1vw;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.753);
+    border-radius: 5px;
+}
+.container{
+    position: relative;
+    width: 70%;
+    background: var(--mainColor);
+    padding: 20px 30px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .post{
+    display: none;
+}
+.container .text{
+    font-size: 3vw;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 0 20px #eee;
+}
+.container .edit{
+    font-size: 1.1vw;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    right: 10px;
+    top:5px;
+    cursor: pointer;
+}
+.container .edit:hover{
+    text-decoration: underline;
+}
+
+.starWidget input{
+    display: none;
+}
+
+.starWidget label{
+    font-size: 2vw;
+    color:rgb(252, 252, 252);
+    padding: 10px;
+    float: right;
+    transition: all 0.1s ease;
+    width: 3.5vw;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+    color: rgb(252, 255, 68);
+}
+input:checked ~ label{
+    color: rgb(252, 255, 68);
+}
+input#rate-5:checked ~ label{
+    color: rgb(249, 253, 0);
+    text-shadow: 0 0 10px rgb(111, 158, 1);
+}
+section form{
+    text-align: center;
+    display: none;
+}
+#rate-1:checked ~ form header:before{
+    content: "It was terrible 😞";
+}
+#rate-2:checked ~ form header:before{
+    content: "I don't like it 😐";
+}
+#rate-3:checked ~ form header:before{
+    content: "It was awesome 🙂";
+}
+#rate-4:checked ~ form header:before{
+    content: "I really like it 🤩";
+}
+#rate-5:checked ~ form header:before{
+    content: "I love it 🥰";
+}
+input:checked ~ form{
+    display: block;
+}
+section form header{
+    width: 100%;
+    font-size: 1.3vw;
+    color: rgba(0, 0, 0, 0.808);
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    justify-content: center;
+    transition: all 0.2 ease;
+    background: var(--mainColor);
+}
+section form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+section form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 1vw;
+    resize: none;
+}
+
+section form .btn{
+    height: 3vh;
+    width: 70%;
+    margin: 15px auto;
+}
+
+section form .btn button{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 2.2vh;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+section form .btn button:hover{
+    background: rgb(221, 221, 221);
+}
+

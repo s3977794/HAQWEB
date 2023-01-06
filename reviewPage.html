@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anemo Wanderer</title>
     <script src="https://kit.fontawesome.com/6f8d1d8e9d.js"></script>
+    <link rel="stylesheet" href="reviewPage.css">
     <link rel="stylesheet" href="Header and footer.css">
 </head>
 <body>
@@ -77,8 +78,72 @@
         </ul>
     </header>
 <!--End header section-->
-
-
+<section>
+    <div class="mainHeading">
+        <h1>Customer</h1>
+        <h2>Feedback</h2>
+    </div>
+    <div class="mainContainer">
+        <div class="pickLocation">
+            <div class="pickText">
+                <label for="place">Choose a location:</label>
+            </div>
+            <div class="pickField">
+                <select name="place" id="place" value="Choose a place">
+                    <option value="dreamtea">Dreamtea</option>
+                    <option value="4P's">4P's</option>
+                    <option value="a ma">A Mà</option>
+                    <option value="nhathoducba">Nhà Thờ Đức Bà</option>
+                    <option value="cauanhsao">Cầu Ánh Sao</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <div class="post">
+                <div class="text">Thank for your feedback!</div>
+                <div class="edit">EDIT</div>
+            </div>
+            <div class="starWidget">
+                <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" ><i class="fa-solid fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" ><i class="fa-solid fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" ><i class="fa-solid fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" ><i class="fa-solid fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" ><i class="fa-solid fa-star"></i></label>
+                <form action="">
+                    <header></header>
+                    <div class="textarea">
+                        <textarea placeholder="Leave us a review..."></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            const btn = document.querySelector("button");
+            const post = document.querySelector(".post");
+            const widget = document.querySelector(".starWidget");
+            const editBtn = document.querySelector(".edit");
+            btn.onclick = ()=>{
+                widget.style.display = 'none';
+                post.style.display = 'block';
+                editBtn.onclick = ()=>{
+                    widget.style.display = 'block';
+                    post.style.display = 'none';
+                    
+                }
+                return false; 
+            }
+        </script>
+        
+    </div>
+</section>
 <!--Begin footer-->
 <footer>
     <div class="row">
