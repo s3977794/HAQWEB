@@ -6,7 +6,7 @@
     <title>Anemo Wanderer</title>
     <script src="https://kit.fontawesome.com/6f8d1d8e9d.js"></script>
     <link rel="stylesheet" href="Header and footer.css">
-    <link rel="stylesheet" href="Service.css">
+    <link rel="stylesheet" href="transportationPage.css">
 </head>
 <body>
 <!--Begin header section-->
@@ -14,13 +14,13 @@
         <h1 class="logo">ANEMO<br> 
             <span>WANDERER</span></h1>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="onPage">
-                <a  href="Service.html">Service</a>
+            <li><a  href="index.html">Home</a></li>
+            <li>
+                <a class="service" href="Service.html">Service</a>
                 <div class="dropdown">
                     <ul>
                         <li><a href="#">Book Hotel</a></li>
-                        <li><a href="transportationPage.html">Transportation</a></li>
+                        <li class="onPage"><a  href="transportationPage.html">Transportation</a></li>
                         
                     </ul>
                 </div>
@@ -78,21 +78,57 @@
         </ul>
     </header>
 <!--End header section-->
-
-<!-- Start Service Intro Page -->
+<!-- Start Slider -->
 <section>
-    <div class="mainContainer">
-        <div class="mainContainerHide"> 
-            <div class="mainText">
-                <h3>You has been redirected!</h3>
-                <p>Opening the link...</p>
+    <div class="slider">
+        <div class="images">
+            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">
+            <input type="radio" name="slide" id="img4">
+
+            <div class="mainContainer" class="m1">
+                <div class="mainText">
+
+                </div>
+                <div class="mainPic">
+                    <img src="HtmlPicture/Han.png">
+                </div>
             </div>
+            <div class="mainContainer" class="m2">
+                <div class="mainText">
+
+                </div>
+                <div class="mainPic">
+                    <img src="HtmlPicture/Quang.JPG">
+                </div>
+            </div>
+            <div class="mainContainer" class="m3">
+                <div class="mainText">
+
+                </div>
+                <div class="mainPic">
+                    <img src="HtmlPicture/Han.png">
+                </div>
+            </div>
+            <div class="mainContainer" class="m4">
+                <div class="mainText">
+
+                </div>
+                <div class="mainPic">
+                    <img src="HtmlPicture/Han.png">
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+            <label for="img4"></label>
         </div>
     </div>
 </section>
-
-<!-- End Service Intro Page -->
-
+<!-- End Slider -->
 <!--Begin footer-->
 <footer>
     <div class="row">

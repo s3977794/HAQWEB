@@ -58,12 +58,11 @@ header ul li{
   transition: all 0s;
 }
 header ul li:hover{
-  background: #00fc00;
+  background: #2f802f;
 }
 
 .onPage{
-  border-bottom: 2px solid var(--headingUnderline) ; 
-  color: var(--headingOnPage);
+  background: #2f802f;
 }
 header ul li a{
   color:rgb(255, 255, 255);
@@ -91,7 +90,7 @@ header .dropdown ul li{
    text-align: center;
 }
 header .dropdown ul li:hover{
-  background: #00fc00;
+  background: #2f802f;
   transition: 0s;
 }
 header .dropdown ul li a{

@@ -1,16 +1,6 @@
-:root{
-    --headingColor: #72f563;
-    --headingSpan:rgb(45, 170, 41);
-    --headingUnderline: rgb(0, 0, 0);
-    --headingOnPage: rgb(0, 0, 0);
-    --mainFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    --footerColor: linear-gradient(to right, #54ce62, #08ff98);
-    }
-
 
 header .dropdown .onPage {
-    border-bottom: 1px solid var(--headingUnderline);
-    color: var(--headingOnPage);
+    background: #2f802f;
 }
 section{
     background: linear-gradient(0deg, rgb(211, 248, 209), rgb(49, 248, 165));

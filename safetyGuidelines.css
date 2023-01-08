@@ -7,7 +7,7 @@ section{
     font-size: 2vw;
     text-transform: capitalize;
     padding: 10px 60px 0 0 ;
-    background: linear-gradient(90deg, #d8fdda, #0da853);
+    background: linear-gradient(90deg, #81ee86, #049e49);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -38,9 +38,10 @@ section{
   }
   .mainContentDetail h1{
     font-size: 1.6vw;
-    text-indent: 20px;
+    margin-bottom: 10px;
   }
   .mainContentDetail p{
     font-size: 1.3vw;
+    margin-bottom: 10px;
   }
 
