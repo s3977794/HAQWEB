@@ -15,12 +15,14 @@ section{
   text-align: center;
   font-size: 3vw;
   padding: 10px 60px 0 0 ;
-  color: #ff0000
+  background: linear-gradient(360deg, #44d709a9 1%, #06da03);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .aboutUsHeadingContent h3{
   text-align: center;
   font-size: 1.5vw;
-  background: linear-gradient(360deg, #fd9999a9, #f80000);
+  background: linear-gradient(360deg, #44d709a9 1%, #06da03);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

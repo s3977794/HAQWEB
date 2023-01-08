@@ -3,7 +3,7 @@ header .dropdown .onPage {
     background: #2f802f;
 }
 section{
-    background: linear-gradient(0deg, rgb(211, 248, 209), rgb(49, 248, 165));
+    background: linear-gradient(0deg, rgb(211, 248, 209), rgb(85, 180, 96));
     margin: 0 2%;
     border-radius: 40px;
 }
@@ -11,7 +11,7 @@ section{
     text-align: center;
     font-size: 3vh;
     padding: 2% 0 0 0;
-    background: linear-gradient(90deg, #f4d1fd, #051eff);
+    background: linear-gradient(90deg, #f5f5f5, #3ef95d);
     text-transform: uppercase;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
