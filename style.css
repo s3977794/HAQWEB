@@ -8,7 +8,7 @@
 }
 /* Set variable */
 :root{
---headingColor: #00ddff00;
+--headingColor: #00000000;
 --headingSpan:rgb(47, 255, 0);
 --headingUnderline: rgb(0, 0, 0);
 --headingOnPage: rgb(0, 0, 0);
@@ -51,7 +51,7 @@ header ul{
   display: flex;
   padding-left: -10px;
   transition: 0.5s;
-  font-weight: 700;
+  font-weight: 500;
 }
 header ul li{
   padding: 20px 30px ;
@@ -59,14 +59,14 @@ header ul li{
   transition: all 0s;
 }
 header ul li:hover{
-  background: #2f802f;
+  background: #89ff89;
 }
 
 .onPage{
   background: #2f802f;
 }
 header ul li a{
-  color:rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
   font-size: 1.3vw;
 }
 header .dropdown{
@@ -301,7 +301,7 @@ bottom: 0;
 background: var(--footerColor);
 color: #fff;
 padding: 100px 0 30px;
-font-size: 16px;
+font-size: 20px;
 line-height: 20px;
 }
 footer .row {
