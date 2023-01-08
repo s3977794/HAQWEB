@@ -2,7 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 :root{
-    --mainColor: #63fc84;
+    --mainColor: #5cff6c;
 }
 
 section{
@@ -14,7 +14,7 @@ section .mainHeading h1{
     font-size: 3vw;
     font-family: Arial, Helvetica, sans-serif;
     padding-right: 10vw;
-    background: linear-gradient(360deg, #70b87642, #1ebd10);
+    background: linear-gradient(360deg, #8fea97bb, #1ebd10);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -23,19 +23,20 @@ section .mainHeading h2{
     font-size: 3vw;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 15vw;
-    background: linear-gradient(360deg, #70b87642, #1ebd10);
+    background: linear-gradient(360deg, #8fea97bb, #1ebd10);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .mainContainer{
+    position: static;
     width: 75%;
-    height: 60%;
+    height: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: top;
-    background: rgb(176, 250, 186);
+    background: linear-gradient(360deg, rgb(224, 254, 228), #7afb76 );
     margin-top: 25px;
     border-radius: 20px;
 }
@@ -70,7 +71,7 @@ section .pickLocation .pickField select{
     width: 70%;
     background: var(--mainColor);
     padding: 20px 30px;
-    border-radius: 6px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,6 +99,7 @@ section .pickLocation .pickField select{
     text-decoration: underline;
 }
 
+
 .starWidget input{
     display: none;
 }
@@ -122,10 +124,7 @@ input#rate-5:checked ~ label{
     color: rgb(249, 253, 0);
     text-shadow: 0 0 10px rgb(111, 158, 1);
 }
-section form{
-    text-align: center;
-    display: none;
-}
+
 #rate-1:checked ~ form header:before{
     content: "It was terrible 😞";
 }
@@ -144,16 +143,34 @@ section form{
 input:checked ~ form{
     display: block;
 }
+section form{
+    text-align: center;
+    display: none;
+}
 section form header{
     width: 100%;
     font-size: 1.3vw;
-    color: rgba(0, 0, 0, 0.808);
-    font-weight: 500;
-    margin: 5px 0 20px 0;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin: 5px 0 5px 0;
     justify-content: center;
     transition: all 0.2 ease;
     background: var(--mainColor);
 }
+section .pictureContainer{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+}
+section .pictureContainer label{
+    width: 100%;
+    font-size: 1vw;
+    background: rgb(14, 207, 0);
+    border-radius: 20px;
+}
+
 section form .textarea{
     height: 100px;
     width: 100%;

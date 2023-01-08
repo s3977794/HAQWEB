@@ -1,4 +1,7 @@
 /* Start About Us */
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 section{
   position: relative;
 }
@@ -11,17 +14,13 @@ section{
 .aboutUsHeadingContent h2{
   text-align: center;
   font-size: 3vw;
-  font-family: 'Times New Roman', Times, serif;
   padding: 10px 60px 0 0 ;
-  background: linear-gradient(90deg, #dd99fdaf, #f800d7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff0000
 }
 .aboutUsHeadingContent h3{
   text-align: center;
-  font-size: 2vw;
-  font-family: 'Times New Roman', Times, serif;
-  background: linear-gradient(90deg, #dd99fda9, #f800d7);
+  font-size: 1.5vw;
+  background: linear-gradient(360deg, #fd9999a9, #f80000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -34,15 +33,12 @@ section{
   width: 100%;
 }
 .aboutUsHeadingMainContentTxt h4{
-  font-size: 2.5vw;
-  margin-left: 50px;
-  font-family:'Playfair Display', serif;
+  font-size: 2vw;
+  margin-bottom: 10px;
 }
 .aboutUsHeadingMainContentTxt p{
-  font-size: 1.8vw;
-  font-family:'Playfair Display', serif;
-  text-indent: 90px;
-  
+  font-size: 1.3vw;
+  margin-bottom: 20px;
 }
 .aboutUsHeadingMainContentPic{
   padding-right: 10px;

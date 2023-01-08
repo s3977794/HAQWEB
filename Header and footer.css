@@ -8,12 +8,12 @@
   }
   /* Set variable */
   :root{
-    --headingColor: #72f563;
-    --headingSpan:rgb(45, 170, 41);
+    --headingColor: #42943a;
+    --headingSpan:rgb(47, 255, 0);
     --headingUnderline: rgb(0, 0, 0);
     --headingOnPage: rgb(0, 0, 0);
     --mainFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    --footerColor: linear-gradient(to right, #54ce62, #08ff98);
+    --footerColor: linear-gradient(360deg, #6cf07b 1%, #008c15 );
     --acountBorderColor:rgba(66, 66, 66, 0.658);
   }
 
@@ -60,11 +60,11 @@
   
   .onPage{
     border-bottom: 2px solid var(--headingUnderline) ; 
-  color: var(--headingOnPage);
+    color: var(--headingOnPage);
 }
   header ul li a{
   color:white;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
 }
 header ul li a:hover{
   color:#000000;
@@ -91,7 +91,7 @@ header .dropdown ul li{
    text-align: center;
 }
 header .dropdown ul li:hover{
-  background: #00fc00;
+  background: #18ac18;
   transition: 0s;
 }
 header .dropdown ul li a{
